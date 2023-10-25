@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Assets/css/produto.css">
+    <script src="../Assets/java script/produto.js"></script>
+</head>
+<style>
+    html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<body>
+                                                     <!--BARRA DE NAVEGAÇÃO-->
+  <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-dark" id="nav-bar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="nomeLogo"><img src="../Assets/img/logo.png" alt="LOGO" width="15%" id="logo"><strong>MUNIZ STORE</strong> </a>
+    </div>
+    <div class="container-fluid justify-content-center">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html" id="link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobreNos.html"  id="link">SOBRE NÓS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../Assets/img/compras.png" alt="COMPRAS" width="7%" id="sacola"></a>
+    </div>
+  </nav>
+
+  <!--BARRA NAV MOBILE-->
+
+  <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-dark" id="nav-mobile">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="nomeLogo-mobile"><img src="../Assets/img/logo.png" alt="LOGO" id="logo-mobile"> <strong>Muniz Store</strong> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" id="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html" id="link">  Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobreNos.html"  id="link"> Sobre Nós</a>
+        </li>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="sacola.html" id="link-sacola" ><img src="../Assets/img/compras.png" alt="COMPRAS" width="7%" id="sacola-mobile">Minhas Compras</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!--CONTEUDO-->
+
+  <div id="conteudo">
+      <img src="../Assets/img/imgP1.jpg" alt="" class="imgPrincipal" id="imgPrincipal">
+      <h2 class="titleProduto">Camiseta</h2>
+      <h2 class="precoProduto">R$ 120</h2>
+      <h5 class="tamanhoProduto">Tamanho</h5>
+      <select name="" id="" class="inputTamanho">
+        <option value="">P</option>
+        <option value="">M</option>
+        <option value="">G</option>
+        <option value="">GG</option>
+      </select>
+      <h5 class="quantidadeProduto">Quantidade</h5>
+      <div class="inputGroup">
+        <button class="botaoIncre" onclick="diminuirQuantidade()">-</button>
+        <input type="number" name="" id="quantidade"  value="0" min="0" class="inputQuantidade" readonly>
+        <button class="botaoDecre" onclick="aumentarQuantidade()">+</button>
+      </div>
+      <button class="buttonCarrinho">Adicionar ao Carrinho</button>
+      <div class="imgsPequenas">
+        <img src="../Assets/img/camiseta1.jpg"  class="img " alt="" id="img1" onclick="trocarImagem1('camiseta1.jpg')">
+        <img src="../Assets/img/imgP1.jpg" alt="" class="img" id="img2" onclick="trocarImagem2('imgP1.jpg')">
+        <img src="../Assets/img/camiseta1.jpg" alt="" class="img" id="img3" onclick="trocarImagem3('camiseta1.jpg')">
+      </div>
+  </div>
+</body>

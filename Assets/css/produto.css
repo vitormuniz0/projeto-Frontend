@@ -1,0 +1,192 @@
+/*BARRA NAV*/
+
+#link{
+    color: black;      /*LINKS/PAGINAS*/
+    font-size: 100%;
+    
+}
+
+#nomeLogo{
+    color: black;
+    font-size: 130%;          /*NOME LOGO*/
+}
+
+#logo{ 
+    margin-left: 5%;           /*LOGO*/
+}
+#sacola{
+    margin-left: 80%;        /*SIMBOLO SACOLA*/
+}
+
+
+#conteudo{
+    width: 80%;
+    margin: auto 10% ;     /*Conteudo largura */
+    
+}
+
+.imgPrincipal{                  /*Imagem grande do produto*/
+    margin-top: 10%;
+    float: left;
+    width: 35%;
+    
+}
+
+.titleProduto{
+    display: flex;                /*Nome do produto*/
+    float: left;
+    margin-top: 15%;
+    margin-left: 5%;
+    font-family: cursive, sans-serif;
+}
+
+.precoProduto{
+   display: flex;              /*Valor (preco) produto*/
+   float: left;
+   margin-top:20% ;
+   margin-left: -10%;
+   font-family: cursive, sans-serif;
+}
+
+.tamanhoProduto{
+    display: flex;
+    float: left;
+    margin-top:30% ;                        /*Tamanho do produto (P,M,G)*/
+    margin-left: -10%;
+    font-family: cursive, sans-serif;
+}
+
+.inputTamanho{
+    width: 15%;
+    float: left;                               /*Input do tamanho do produto*/
+    margin-top:32% ;
+    margin-left: -10%;
+    font-family: cursive, sans-serif;
+    text-align: center;
+}
+
+.quantidadeProduto{
+    display: flex;
+    float: left;
+    margin-top:36% ;                         /*Quantidade do produto*/
+    margin-left: -15%;
+    margin-bottom: 2%;
+    font-family: cursive, sans-serif;
+}
+
+.inputGroup{
+    display: flex;
+    float: left;
+    margin-top:38% ;                          /*grupo envolve input e os botoes*/
+    margin-left: -15%;
+    font-family: cursive, sans-serif;
+    width: 20%;
+    border:1px solid black ;
+}
+.inputQuantidade{
+    text-align: center;
+    border: none;
+    width: 82%;                                /*input number que vai a quantidade*/
+}
+
+.botaoDecre{
+    border: none;
+    background-color: white;           /*botao +*/
+    margin-left: 2%;
+    display: block;
+}
+
+.botaoDecre:hover{
+    background-color: azure;
+}
+
+.botaoIncre:hover{
+    background-color: azure;
+}
+
+.botaoIncre{
+    border: none;                      /*botao -*/
+    background-color: white;
+}
+
+.buttonCarrinho{
+    float: left;
+    margin-top:44% ;                          /*botão adicionar ao carrinho*/
+    margin-left: -20%;
+    font-family: cursive, sans-serif;
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.imgsPequenas{
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.img{
+    width: 11.4%;
+    height: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------*/
+                                             /* RESPONSIVIDADE*/
+
+
+
+ 
+
+                                         /*BARRA NAV MOBILE*/ 
+
+ #nav-mobile{
+    display: none;             /*PARA O MENU MOBILE NÃO APARECER NO NORMAL*/
+}
+
+@media screen and (max-width: 575px){
+    
+    
+    /*BARRA NAV*/
+  
+  #nav-bar{                    
+      display: none;
+  }
+  #nav-mobile{
+      display: block;             
+  }
+  #logo-mobile{
+      width:15% ;                  /*LOGO*/
+      margin-left: 2%;
+  }
+  #nomeLogo-mobile{
+      width: 75% ;                   /*LOGO*/
+      color: black;
+      font-size: 130%;
+  }
+  #button{
+      background-color: black;       /*BOTÃO SANDUICHE*/
+     
+  }
+  #sacola-mobile{
+      width: 7%;                  /*SIMBOLO SACOLA*/
+      margin-left: -3%;
+  }
+  #link-sacola{
+      color: black;                  /*NÃO APARECER NO NORMAL*/
+      font-size: 100%;       
+  }
+
+}

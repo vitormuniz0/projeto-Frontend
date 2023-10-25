@@ -1,0 +1,186 @@
+
+/*BARRA NAV*/
+
+#link{
+    color: black;      /*LINKS/PAGINAS*/
+    font-size: 100%;
+    
+}
+
+#nomeLogo{
+    color: black;
+    font-size: 130%;          /*NOME LOGO*/
+}
+
+#logo{ 
+    margin-left: 5%;           /*LOGO*/
+}
+#sacola{
+    margin-left: 80%;        /*SIMBOLO SACOLA*/
+}
+
+
+                                                      /*CONTEUDO*/
+
+#conteudo{
+    width: 80%;
+    margin: auto 10%;                                  /*TAMANHO DE EXIBIÇÃO DO CONTEUDO*/
+}
+
+.title{
+    font-family: Bradley Hand, cursive,sans-serif;
+    font-size: 180% ;                                       /*TITULO PRINCIPAL*/
+    text-align: center;
+    margin-top: 15%;
+}
+
+.frase-conteudo{
+    font-family: cursive, sans-serif;
+    font-size: 110%;                                /*FRASE ABAIXO DO TITULO*/
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.img1{
+    width: 100%;
+    margin-top: 6%;                             /*IMAGEM PRINCIPAL*/
+}
+
+.subtitle{
+    font-size: 140% ;                    /*FRASE DOS PRINCIPAIS MODELOS*/
+    margin: 5% auto;
+}
+
+.imgs-modelos{ 
+    width: 31%;                           /*IMAGENS PRINCIPAIS DOS MODEL0S*/
+    height: 30%;
+    float: left;
+    overflow:hidden;
+}
+
+.imgs-modelos:hover{                      /*ALMENTAR O TAMANHO DA IMAGEM EM 10% QUANDO O MOUSE PASSAR POR CIMA*/
+    transform: scale(1.1);
+}
+
+
+.img2{                                         /*MARGEN ENTRE AS IMAGENS*/
+    margin: auto 3.5%;
+}
+
+.imgs{
+    margin-bottom: 2%;                         /*IMAGENS MODELOS*/
+    display: flex;
+}
+
+.titles-modelos{
+    width: 31%;
+    display: flex;
+    float: left;                      /*TITULOS MODELOS*/
+    font-size: 120%;
+    text-align: center;
+    padding-left: 7%;
+    font-family: Bradley Hand, cursive,sans-serif ;
+}
+
+.titlemdl{
+    display: flex;                     /*TITULOS MODELOS*/
+}
+
+#form-body{
+    width: 80%;
+    margin-left: 10%;          /*FORMULARIO*/
+    margin-bottom:10% ;
+}
+.title-promocoes{
+    margin-top: 5%;
+    font-size: 105%;                              /*TITULO FORMULARIO*/
+    font-family: Bradley Hand, cursive,sans-serif ;
+    margin-bottom: 5%;
+}
+
+
+
+/*---------------------------------------------------------------------------------------*/
+                                             /* RESPONSIVIDADE*/
+
+
+
+ 
+
+                                         /*BARRA NAV MOBILE*/                
+
+
+#form-mobile{                      /*FORMULARIO MOBILE NÃO APARECER NO NORMAL*/
+    display: none;                         
+}
+
+.titlemdl-mobile{                    /* TITULOS DOS MODELOS NÃO APARECER NO NORMAL*/
+    display: none;                   
+}
+
+#nav-mobile{
+    display: none;             /*PARA O MENU MOBILE NÃO APARECER NO NORMAL*/
+}
+
+@media screen and (max-width: 575px){
+    
+    
+      /*BARRA NAV*/
+    
+    #nav-bar{                    
+        display: none;
+    }
+    #nav-mobile{
+        display: block;             
+    }
+    #logo-mobile{
+        width:15% ;                  /*LOGO*/
+        margin-left: 2%;
+    }
+    #nomeLogo-mobile{
+        width: 75% ;                   /*LOGO*/
+        color: black;
+        font-size: 130%;
+    }
+    #button{
+        background-color: black;       /*BOTÃO SANDUICHE*/
+       
+    }
+    #sacola-mobile{
+        width: 7%;                  /*SIMBOLO SACOLA*/
+        margin-left: -3%;
+    }
+    #link-sacola{
+        color: black;                  /*NÃO APARECER NO NORMAL*/
+        font-size: 100%;       
+    }
+
+    /*---------------------------------------------------------------------------------------*/
+       
+    .titles-modelos{
+        width: 31%;
+        display: flex;
+        float: left;
+        font-size: 52%;
+        text-align: center;
+        padding-left: 5%;
+        font-family: Bradley Hand, cursive,sans-serif ;
+    }
+
+    /*---------------------------------------------------------------------------------------*/
+                /*FORMULARIO MOBILE*/
+    
+    #form-mobile{
+        display: block; 
+    }
+    #form{
+        display: none;
+    }
+    }
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+/*BARRA NAV*/
+
+#link{
+    color: black;      /*LINKS/PAGINAS*/
+    font-size: 100%;
+    
+}
+
+#nomeLogo{
+    color: black;
+    font-size: 130%;          /*NOME LOGO*/
+}
+
+#logo{ 
+    margin-left: 5%;           /*LOGO*/
+}
+#sacola{
+    margin-left: 80%;        /*SIMBOLO SACOLA*/
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+                                             /* RESPONSIVIDADE*/
+
+
+
+ 
+
+                                         /*BARRA NAV MOBILE*/ 
+
+ #nav-mobile{
+    display: none;             /*PARA O MENU MOBILE NÃO APARECER NO NORMAL*/
+}
+
+@media screen and (max-width: 575px){
+    
+    
+    /*BARRA NAV*/
+  
+  #nav-bar{                    
+      display: none;
+  }
+  #nav-mobile{
+      display: block;             
+  }
+  #logo-mobile{
+      width:15% ;                  /*LOGO*/
+      margin-left: 2%;
+  }
+  #nomeLogo-mobile{
+      width: 75% ;                   /*LOGO*/
+      color: black;
+      font-size: 130%;
+  }
+  #button{
+      background-color: black;       /*BOTÃO SANDUICHE*/
+     
+  }
+  #sacola-mobile{
+      width: 7%;                  /*SIMBOLO SACOLA*/
+      margin-left: -3%;
+  }
+  #link-sacola{
+      color: black;                  /*NÃO APARECER NO NORMAL*/
+      font-size: 100%;       
+  }
+
+}
